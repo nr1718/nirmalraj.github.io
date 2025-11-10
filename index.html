@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nirmal Raj A | Portfolio</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+  <style>
+    /* -------------------- GLOBAL STYLES -------------------- */
+    body {
+      font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      background: linear-gradient(to right, #141e30, #243b55);
+      background-attachment: fixed;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 70px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: #00e5ff;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: 400;
+      color: #d0e8f2;
+      margin-top: 0;
+      font-size: 1.3em;
+    }
+
+    p {
+      color: #a5c9ca;
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00bcd4;
+      color: white;
+      padding: 12px 25px;
+      margin: 8px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #007c91;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h3 {
+      color: #00e5ff;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .skills-grid, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 25px;
+      transition: transform 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 10px;
+      font-size: 0.9em;
+      color: #b0bec5;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+      color: #00e5ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.3em; }
+      h3 { font-size: 1.6em; }
+      section { padding: 60px 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- -------------------- HEADER -------------------- -->
+  <header>
+    <h1>👋 Hi, I'm <span style="color:#00e5ff;">Nirmal Raj A</span></h1>
+    <h2>Network Engineer | Automation Enthusiast | BCA from MUJ</h2>
+    <p>Welcome to my portfolio — I design, manage, and automate scalable IT networks while exploring data-driven solutions and modern web applications.</p>
+
+    <div class="buttons">
+      <a href="https://portfolio.streamlit.app" class="btn">🌐 My Portfolio</a>
+      <a href="https://flightdelay.streamlit.app" class="btn">✈️ Flight Delay App</a>
+      <a href="https://github.com/nr1718" class="btn">💻 GitHub</a>
+      <a href="https://linkedin.com/in/nirmalraj15" class="btn">🔗 LinkedIn</a>
+      <a href="resume.pdf" class="btn">📄 Download Resume</a>
+    </div>
+  </header>
+
+  <!-- -------------------- ABOUT -------------------- -->
+  <section id="about">
+    <h3>🧑‍💻 About Me</h3>
+    <p>
+      I’m a dedicated Network Engineer with over 10 years of experience designing and managing enterprise-grade networks 
+      across healthcare, hospitality, and corporate environments. I specialize in Wi-Fi deployment, firewall configuration, 
+      automation with Power Automate & PowerShell, and ITIL-based service management.
+    </p>
+    <p>
+      I have my <strong>Bachelor of Computer Applications (BCA)</strong> from <strong>Manipal University Jaipur (MUJ)</strong>, 
+      I’m passionate about combining my infrastructure experience with data analytics and modern automation frameworks.
+    </p>
+  </section>
+
+  <!-- -------------------- SKILLS -------------------- -->
+  <section id="skills">
+    <h3>🧠 Skills & Tools</h3>
+    <div class="skills-grid">
+      <div class="card"><strong>Networking:</strong> Cisco, Cambium, Aruba, Ubiquiti</div>
+      <div class="card"><strong>Security:</strong> Sophos, ARISTA (Untangle), Wireshark</div>
+      <div class="card"><strong>Automation:</strong> PowerShell, Power Automate</div>
+      <div class="card"><strong>Monitoring:</strong> PRTG, LibreNMS, Cacti</div>
+      <div class="card"><strong>Programming:</strong> Python, Basic SQL</div>
+      <div class="card"><strong>Tools:</strong> Streamlit, GitHub, Excel</div>
+    </div>
+  </section>
+
+  <!-- -------------------- PROJECTS -------------------- -->
+  <section id="projects">
+    <h3>🚀 Projects</h3>
+    <div class="projects-grid">
+      <div class="card">
+        <h4>✈️ Flight Delay Prediction App</h4>
+        <p>
+          A Streamlit-based machine learning dashboard that predicts flight delays using linear regression. 
+          Includes live analytics, visualizations, and auto-generated DOCX reports.
+        </p>
+        <a href="https://github.com/nr1718/FlightDelayApp">🔗 View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h4>🌐 Personal Portfolio (Streamlit)</h4>
+        <p>
+          An interactive Streamlit web app showcasing my professional background, projects, and technical skills.
+          Deployed on Streamlit Cloud for live access.
+        </p>
+        <a href="https://portfolio.streamlit.app">🔗 Visit Portfolio</a>
+      </div>
+
+      <div class="card">
+        <h4>💡 IT Automation Scripts</h4>
+        <p>
+          A collection of PowerShell scripts that automate repetitive IT tasks such as Active Directory management, 
+          system cleanup, and network monitoring alerts.
+        </p>
+        <a href="https://github.com/nr1718">🔗 GitHub Repositories</a>
+      </div>
+      
+      <div class="card">
+        <h4>🧑‍Student Analytics Dashboard</h4>
+        <p>
+          Interactive charts and reporting system for student marks and analytics.
+        </p>
+        <a href="https://nr1718.github.io/">🔗 Coming Soon</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- -------------------- CONTACT -------------------- -->
+  <section id="contact">
+    <h3>📬 Contact Me</h3>
+    <p>If you’d like to collaborate, discuss a project, or simply say hello — feel free to connect with me!</p>
+    <p>
+      📧 <a href="mailto:nirmalraj15@gmail.com">nirmalraj15@gmail.com</a><br>
+      📞 <a href="tel:+919986313181">+91 99863 13181</a><br>
+      🔗 <a href="https://linkedin.com/in/nirmalraj15">linkedin.com/in/nirmalraj15</a>
+    </p>
+  </section>
+
+  <!-- -------------------- FOOTER -------------------- -->
+  <footer>
+    © 2025 <strong>Nirmal Raj A</strong> | Designed with ❤️ | Hosted on 
+    <a href="https://github.com/nr1718/nr1718.github.io">GitHub Pages</a>
+  </footer>
+
+</body>
+</html>
